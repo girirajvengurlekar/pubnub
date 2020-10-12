@@ -262,7 +262,7 @@ public class SubscribeMessageWorker implements Runnable {
             }
 
         }
-    }
+    } // Do nothing
 
     private List<String> getDelta(JsonElement delta) {
         List<String> list = new ArrayList<>();
@@ -272,7 +272,7 @@ public class SubscribeMessageWorker implements Runnable {
                 list.add(jsonArray.get(i).getAsString());
             }
         }
-
+        System.out.println("Test");
         return list;
 
     }
